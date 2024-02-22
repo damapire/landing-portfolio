@@ -1,7 +1,11 @@
-// abstract
+// Abstract
 @import './abstract/variables';
+@import './abstract/mixins';
 
-//components
+// Components
+
+// Utilities
 
 // Pages
 @import './pages/home/hero';
+@import './pages/home/services';

@@ -12,7 +12,6 @@ export default function Layout ({ children, title, description }) {
       <Head>
         <title>{title}</title>
         <meta name='description' content={description} />
-
       </Head>
       <Nav />
       {children}
