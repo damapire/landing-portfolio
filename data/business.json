@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "color": "#1E7436",
+        "name": "Landrada Desarrollo S.A de C.V.",
+        "position": "FullStack Developer JS",
+        "date": "Nov 21 - Current",
+        "description": "I design and develop strategic solutions for the company's web development. I also implement the integration of cloud services and technologies such as AWS. I also design interfaces based on user experience."
+    },
+    {
+        "id": 2,
+        "color": "#2DC9FF",
+        "name": "MotoKoor",
+        "position": "Desarrollodor Sr Web",
+        "date": "March 20 - Nov 21",
+        "description": "I design and develop strategic solutions for the company's web development. I also implement the integration of cloud services and technologies such as AWS. I also design interfaces based on user experience."
+    },
+    {
+        "id": 3,
+        "color": "#FF2D2D",
+        "name": "DevKoore",
+        "position": "Desarrollador Jr Web",
+        "date": "Nov 18 - Agu 19",
+        "description": "I design and develop strategic solutions for the company's web development. I also implement the integration of cloud services and technologies such as AWS. I also design interfaces based on user experience."
+    },
+    {
+        "id": 4,
+        "color": "#FFA71C",
+        "name": "Tiendas Eagle Eyes",
+        "position": "Desarrollador Jr Web WordPress",
+        "date": "Nov 18 - Agu 19",
+        "description": "I design and develop strategic solutions for the company's web development. I also implement the integration of cloud services and technologies such as AWS. I also design interfaces based on user experience."
+    }
+]
