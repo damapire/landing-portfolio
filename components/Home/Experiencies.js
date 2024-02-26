@@ -10,7 +10,7 @@ import business from '@/data/business.json'
 export default function Experiencies() {
     return (
         <section className='container-fluid experiencies'>
-            <div className="container">
+            <div className="container experiencies-container">
                 <div className="row">
                     <div className="col-12">
                         <h2 className='experiencies__title'>My Work Experience</h2>
