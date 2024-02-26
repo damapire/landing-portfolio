@@ -23,28 +23,35 @@ const projects = [
         id: 2,
         title: 'Academia Landrada',
         subtitle: 'Platform for training consultants',
-        imageCover: '',
+        imageCover: '/assets/home/projects/img-academialandrada.png',
         bgColor: '#00B451'
     },
     {
         id: 3,
         title: 'Landing Page',
         subtitle: 'Investment Land Sales',
-        imageCover: '',
+        imageCover: '/assets/home/projects/img-landingpage.png',
         bgColor: '#3AACFF'
     },
     {
         id: 4,
-        title: 'Landing Page',
-        subtitle: 'Investment Land Sales',
-        imageCover: '',
-        bgColor: '#3AACFF'
+        title: 'MoveBike',
+        subtitle: 'Motorcycle rental platform',
+        imageCover: '/assets/home/projects/img-movebike.png',
+        bgColor: '#FE5F3B'
     },
     {
         id: 5,
+        title: 'Academia Landrada',
+        subtitle: 'Platform for training consultants',
+        imageCover: '/assets/home/projects/img-academialandrada.png',
+        bgColor: '#00B451'
+    },
+    {
+        id: 6,
         title: 'Landing Page',
         subtitle: 'Investment Land Sales',
-        imageCover: '',
+        imageCover: '/assets/home/projects/img-landingpage.png',
         bgColor: '#3AACFF'
     }
 ]
@@ -52,8 +59,8 @@ const projects = [
 export default function Projects() {
     return (
         <section className="container-fluid projects">
-            <div className="row">
-                <div className="col-12 d-flex justify-content-between">
+            <div className="row container m-0 m-auto">
+                <div className="col-12 container d-flex justify-content-between align-items-lg-center container">
                     <div>
                         <h2 className='projects__title'>Projects</h2>
                         <p className='projects__subtitle'>Perfect solutions for digital experience</p>
@@ -78,6 +85,9 @@ export default function Projects() {
                         modules={[Autoplay, Navigation, Pagination]}
                         breakpoints={{
                             768:{
+                                slidesPerView: 2.1,
+                            },
+                            992:{
                                 slidesPerView: 3,
                             }
                         }}

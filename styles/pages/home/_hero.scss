@@ -27,12 +27,16 @@
         padding: 0 24px;
 
         @include responsive($sm) {
-            padding: 0 120px;
+            padding: 0 0;
             margin: 0 auto;
             display: flex;
             height: 100%;
             align-items: center;
             justify-content: space-between;
+        }
+
+        @include responsive($lg) {
+            padding: 0 120px;
         }
 
         &-row {
@@ -41,6 +45,7 @@
                 width: 50%;
                 align-items: center;
             }
+            
         }
 
         &-row--2 {
