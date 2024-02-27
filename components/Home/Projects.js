@@ -11,50 +11,7 @@ import 'swiper/css/pagination';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import Link from 'next/link';
 
-const projects = [
-    {
-        id: 1,
-        title: 'MoveBike',
-        subtitle: 'Motorcycle rental platform',
-        imageCover: '/assets/home/projects/img-movebike.png',
-        bgColor: '#FE5F3B'
-    },
-    {
-        id: 2,
-        title: 'Academia Landrada',
-        subtitle: 'Platform for training consultants',
-        imageCover: '/assets/home/projects/img-academialandrada.png',
-        bgColor: '#00B451'
-    },
-    {
-        id: 3,
-        title: 'Landing Page',
-        subtitle: 'Investment Land Sales',
-        imageCover: '/assets/home/projects/img-landingpage.png',
-        bgColor: '#3AACFF'
-    },
-    {
-        id: 4,
-        title: 'MoveBike',
-        subtitle: 'Motorcycle rental platform',
-        imageCover: '/assets/home/projects/img-movebike.png',
-        bgColor: '#FE5F3B'
-    },
-    {
-        id: 5,
-        title: 'Academia Landrada',
-        subtitle: 'Platform for training consultants',
-        imageCover: '/assets/home/projects/img-academialandrada.png',
-        bgColor: '#00B451'
-    },
-    {
-        id: 6,
-        title: 'Landing Page',
-        subtitle: 'Investment Land Sales',
-        imageCover: '/assets/home/projects/img-landingpage.png',
-        bgColor: '#3AACFF'
-    }
-]
+import projects from '@/data/projects.json'
 
 export default function Projects() {
     return (
