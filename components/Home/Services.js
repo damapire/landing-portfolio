@@ -1,5 +1,7 @@
 import React from 'react'
 
+import services from '@/data/services.json'
+
 export default function AboutMe() {
   return (
     <section className='container-fluid services'>
@@ -8,14 +10,14 @@ export default function AboutMe() {
           <div className="col-lg-6 order-1 order-lg-0">      
             <div className="services__wrapper-items">
               {
-                [1, 2, 3].map(index => (
-                  <section className='services__item' key={index}>
-                    <figure className='services__item-wrapper-icon'>
-                      <img src="/assets/icons/icon-code.svg" alt={`Icon ${index}`} className='services__item-icon' />
+                services.map(item => (
+                  <section className='services__item' key={item}>
+                    <figure className='services__item-wrapper-icon' style={{backgroundColor: item.bgColor}}>
+                      <img src={item.icon} alt={`Icon ${item.title}`} className='services__item-icon' />
                     </figure>
                     <div>
-                      <h3 className='services__item-title'>Web Development</h3>
-                      <p className='services__item-subtitle'>5 Projects</p>
+                      <h3 className='services__item-title'>{item.title}</h3>
+                      <p className='services__item-subtitle'>{item.subtitle}</p>
                     </div>
                   </section>
                 )) 

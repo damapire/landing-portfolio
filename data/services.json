@@ -1,0 +1,23 @@
+[
+    {
+        "id" : 1,
+        "title" : "Web Development",
+        "subtitle" : "5 Projects",
+        "icon" : "/assets/icons/icon-code.svg",
+        "bgColor" : "#00D394"
+    },
+    {
+        "id" : 2,
+        "title" : "Diseño UX/UI",
+        "subtitle" : "5 Projects",
+        "icon" : "/assets/icons/icon-pen.svg",
+        "bgColor" : "#2DC9FF"
+    },
+    {
+        "id" : 3,
+        "title" : "Marketing Digital",
+        "subtitle" : "5 Projects",
+        "icon" : "/assets/icons/icon-computer.svg",
+        "bgColor" : "#FFA71C"
+    }
+]
