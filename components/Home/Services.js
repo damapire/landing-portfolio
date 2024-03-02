@@ -7,11 +7,11 @@ export default function AboutMe() {
     <section className='container-fluid services'>
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 order-1 order-lg-0">      
+          <div className="col-md-6 order-1 order-md-0">      
             <div className="services__wrapper-items">
               {
                 services.map(item => (
-                  <section className='services__item' key={item}>
+                  <section className='services__item d-flex align-items-center' key={item}>
                     <figure className='services__item-wrapper-icon' style={{backgroundColor: item.bgColor}}>
                       <img src={item.icon} alt={`Icon ${item.title}`} className='services__item-icon' />
                     </figure>
@@ -24,11 +24,11 @@ export default function AboutMe() {
               }
             </div>
           </div>
-          <div className="col-lg-6 order-0 order-lg-1">
+          <div className="col-md-6 order-0 order-md-1">
             <h2 className='services__title'>What do I help?</h2>
             <p className='services__text'>I will hel you with finging a solution and solve
               your problems. We use process design to create digital products. Besids that also help their business</p>
-              <p className='services__text'>We use process design to create digital products. Besids that also help their business</p>
+              <p className='services__text d-none d-md-block'>We use process design to create digital products. Besids that also help their business</p>
               <section className='services__info'>
               <div>
                   <strong className='services__info-title'>285+</strong>
