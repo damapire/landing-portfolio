@@ -14,3 +14,9 @@
         }
     }
 }
+
+.h-md-100 {
+    @include responsive($md) {
+        height: 100%;
+    }
+}

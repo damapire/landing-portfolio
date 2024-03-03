@@ -21,10 +21,15 @@
     }
 
     &-brand {
-        font-size: 25px;
+        color: #000;
+        font-size: 20px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+
+        @include responsive($md) {
+            font-size: 25px;
+        }
     }
 
     &-link {
@@ -52,10 +57,10 @@
             transform: scaleX(0);
             transition: transform .3s ease-in-out;
         }
-        
+
         &:hover::before {
-          transform-origin: left;
-          transform: scaleX(1);
+            transform-origin: left;
+            transform: scaleX(1);
         }
 
         @include responsive($md) {
@@ -81,7 +86,7 @@
             top: -17px;
             right: -71px;
         }
-          
+
     }
 
     &-toggler {
@@ -112,7 +117,9 @@
     font-family: "Source Code Pro";
 
     &-title {
-        font-size: 25px;
+        color: #000;
+        font-family: "Source Code Pro";
+        font-size: 20px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;

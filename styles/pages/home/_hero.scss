@@ -1,167 +1,159 @@
 .hero {
     width: 100%;
-    height: calc(770px - 30px);
+    height: calc(750px - 73px);
+    margin-top: 73px;
+    /* height: calc(770px - 73px);
+    margin-top: 73px; */
 
     position: relative;
-    background: url(/assets/home/avatar-dev.png), url(/assets/home/hero-flame.svg), linear-gradient(180deg, rgba(248,247,241,1) 0%, rgba(248,247,241,1) 35%, rgb(255, 255, 255) 35%, rgb(255, 255, 255) 100%);
-    background-size: 50vh, auto, 100%;
+    background: url(/assets/home/avatar-dev.png), url(/assets/home/hero-flame.svg), linear-gradient(180deg, rgba(248, 247, 241, 1) 0%, rgba(248, 247, 241, 1) 38%, rgb(255, 255, 255) 38%, rgb(255, 255, 255) 100%);
+    background-size: 330px, 370px, 100%;
     background-position: center bottom;
     background-repeat: no-repeat;
     z-index: -2;
     overflow: hidden;
 
-    @include responsive($sm) {
-        height: calc(100vh - 30px);
-        margin-top: 30px;
-
-        background: url(/assets/home/avatar-dev-lg.png), url(/assets/home/hero-flame-lg.svg), linear-gradient(180deg, #F8F7F1 0%, rgba(248, 247, 241, 0.00) 100%);
-        background-size: 60vh, auto, 100%;
+    @include responsive($md) {
+        width: 100%;
+        height: calc(100vh - 73px);
+        margin-top: 73px;
+        background: url(/assets/home/avatar-dev.png), url(/assets/home/hero-flame-lg.svg), linear-gradient(180deg, rgba(248, 247, 241, 1) 0%, rgba(248, 247, 241, 1) 100%);
+        background-size: 80vh, 800px, 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
-        z-index: -2;
-        overflow: hidden;
     }
 
-    &__width {
-        padding: 0 24px;
-
-        @include responsive($sm) {
-            padding: 0 0;
-            margin: 0 auto;
-            display: flex;
-            height: 100%;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        @include responsive($lg) {
-            padding: 0 120px;
-        }
-
-        &-row {
-            @include responsive($sm) {
-                height: 100%;
-                width: 50%;
-                align-items: center;
-            }
-            
-        }
-
-        &-row--2 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
+    @include responsive($lg) {
+        height: calc(1000px - 73px);
+        margin-top: 73px;
+        background: url(/assets/home/avatar-dev.png), url(/assets/home/hero-flame-lg.svg), linear-gradient(180deg, rgba(248, 247, 241, 1) 0%, rgba(248, 247, 241, 1) 100%);
+        background-size: 80vh, 1200px, 100%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
     }
 
-    &__title {
-        color: #000;
-        font-family: $font-primary;
-        font-size: 45px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 50px;
-        /* 111.111% */
+    &__info {
         margin-top: 54px;
-        margin-bottom: 17px;
 
         @include responsive($md) {
-            font-size: 55px;
+            justify-content: space-between;
+            margin: 0;
         }
 
         @include responsive($lg) {
-            font-size: 75px;
-            line-height: normal;
-            margin: 0;
+            justify-content: space-evenly;
         }
-    }
 
-    &__subtitle {
-        color: #25383F;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 32px;
-        /* 200% */
-        margin-bottom: 71px;
-
-        @include responsive($sm) {
+        &-title {
             color: #000;
-            font-size: 20px;
-            line-height: 38px;
-            /* 190% */
-            width: 100%;
-            text-align: right;
-        }
-    }
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 50px;
 
-    &__email {
-        color: #FF7736;
-        font-family: Ubuntu;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 38px;
-        /* 146.154% */
-        text-decoration-line: underline;
-        text-transform: lowercase;
-    }
-
-    &__badge {
-        width: 100%;
-        text-align: right;
-        margin: 0;
-        position: relative;
-        right: -20px;
-
-        @include responsive($sm) {
-            right: 0;
-        }
-
-        &-img {
-            width: 97px;
-            height: 97px;
-
-            @include responsive($sm) {
-                width: 160px;
-                height: 160px;
+            @include responsive($lg) {
+                font-size: 90px;
+                line-height: normal;
             }
         }
-    }
 
-    &__experiencies {
-        color: #000;
-        font-style: normal;
-        line-height: normal;
-        display: flex;
-        align-items: center;
-        gap: 16px;
+        &-email {
+            color: #FF7736;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 38px;
+            text-decoration-line: underline;
+            text-transform: lowercase;
+        }
+
+        &-experiencies {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
 
         &-number {
+            color: #000;
             font-size: 70px;
+            font-style: normal;
             font-weight: 500;
+            line-height: normal;
             letter-spacing: -9.8px;
         }
 
         &-years {
+            color: #000;
             font-size: 20px;
+            font-style: normal;
             font-weight: 400;
+            line-height: normal;
             text-transform: uppercase;
             margin: 0;
-            max-width: 120px;
         }
-    }
-    
-    &__position {
-        color: #000;
-        text-align: center;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 38px;
-        /* 146.154% */
-        text-transform: uppercase;
-        text-align: right;
+
+        &--data {
+            margin-top: 0;
+        }
+
+        &-subtitle {
+            color: #25383F;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            margin: 15px 0;
+
+            @include responsive($md) {
+                text-align: end;
+            }
+
+            @include responsive($lg) {
+                color: #000;
+                font-size: 24px;
+                line-height: 38px;
+            }
+        }
+
+        &-badge {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+
+            &-img {
+                width: 90px;
+                height: 90px;
+
+                @include responsive($md) {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                @include responsive($lg) {
+                    width: 160px;
+                    height: 160px;
+                }
+            }
+        }
+
+        &-position {
+            text-align: end;
+            margin: 0 12px 0 0;
+
+            @include responsive($md) {
+                color: #000;
+                margin: 0;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+                text-transform: uppercase;
+            }
+
+            @include responsive($lg) {
+                font-size: 26px;
+                line-height: 38px;
+            }
+        }
     }
 }
