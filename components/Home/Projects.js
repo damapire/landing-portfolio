@@ -39,13 +39,22 @@ export default function Projects() {
                             clickable: true,
                           }}
                         navigation={true}
-                        modules={[Autoplay, Navigation, Pagination]}
+                        modules={[ Navigation, Pagination]}
                         breakpoints={{
-                            768:{
+                            375:{
+                                slidesPerView: 1.4,
+                            },
+                            425:{
+                                slidesPerView: 1.6,
+                            },
+                            538:{
                                 slidesPerView: 2.1,
                             },
                             992:{
-                                slidesPerView: 3,
+                                slidesPerView: 2.4,
+                            },
+                            1200:{
+                                slidesPerView: 3.4,
                             }
                         }}
                         className='projects__swiper'
