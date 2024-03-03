@@ -24,10 +24,10 @@
     }
 
     @include responsive($lg) {
-        height: calc(1000px - 73px);
+        height: calc(800px - 73px);
         margin-top: 73px;
         background: url(/assets/home/avatar-dev.png), url(/assets/home/hero-flame-lg.svg), linear-gradient(180deg, rgba(248, 247, 241, 1) 0%, rgba(248, 247, 241, 1) 100%);
-        background-size: 80vh, 1200px, 100%;
+        background-size: 550px, 1200px, 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
@@ -52,6 +52,11 @@
             line-height: 50px;
 
             @include responsive($lg) {
+                font-size: 70px;
+                line-height: normal;
+            }
+
+            @include responsive($xl) {
                 font-size: 90px;
                 line-height: normal;
             }
@@ -142,12 +147,12 @@
 
             @include responsive($md) {
                 color: #000;
-                margin: 0;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 28px;
                 text-transform: uppercase;
+
             }
 
             @include responsive($lg) {
