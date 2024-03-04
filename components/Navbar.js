@@ -4,7 +4,7 @@ import React from 'react'
 
 import ICON_WHATSAPP from '@/public/assets/home/nav/icon-whatsapp.svg'
 
-export default function Nav() {
+export default function Navbar() {
   return (
     <nav className="navbar container-fluid fixed-top">
       <div className="container navbar__container m-0 m-auto gap-md-5">

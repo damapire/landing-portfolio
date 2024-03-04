@@ -1,0 +1,127 @@
+.navbar {
+    background-color: #F8F7F1;
+    color: #000;
+    font-family: "Source Code Pro";
+    height: 73px;
+    padding: 0 8px;
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+        right: 5%;
+        height: 1px;
+        background: #E1DDC7;
+
+        @include responsive($sm) {
+            content: none;
+        }
+    }
+
+    &-brand {
+        color: #000;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        @include responsive($md) {
+            font-size: 25px;
+        }
+    }
+
+    &-link {
+        color: #000;
+        font-family: "Source Code Pro";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 0 auto;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            border-radius: 4px;
+            background-color: #18272F;
+            bottom: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+        }
+
+        &:hover::before {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+
+        @include responsive($md) {
+            font-size: 18px;
+        }
+
+        &--whatsapp {
+            display: flex;
+            position: relative;
+            margin-right: 55px;
+        }
+
+        &--whatsapp::after {
+            position: absolute;
+            content: '';
+            background-image: url(/assets/home/nav/icon-whatsapp.svg);
+            background-size: cover;
+            width: 75px;
+            height: 75px;
+            display: block;
+            background-repeat: no-repeat;
+            background-position: center center;
+            top: -17px;
+            right: -71px;
+        }
+
+    }
+
+    &-toggler {
+        background-color: #FFF;
+        filter: drop-shadow(34px 14px 54px rgba(0, 0, 0, 0.12));
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        &-icon {
+            background-image: url(/assets/icons/icon-hamburguer.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 100%;
+        }
+    }
+
+
+}
+
+.offcanvas {
+    color: #000;
+    font-family: "Source Code Pro";
+
+    &-title {
+        color: #000;
+        font-family: "Source Code Pro";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}

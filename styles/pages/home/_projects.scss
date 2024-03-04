@@ -9,6 +9,10 @@
         font-weight: 500;
         line-height: normal;
 
+        @include responsive($md) {
+            font-size: 35px;
+        }
+
         @include responsive($lg) {
             font-size: 70px;
         }

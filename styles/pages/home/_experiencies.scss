@@ -44,6 +44,11 @@
             line-height: normal;
             margin-bottom: 4px;
 
+            @include responsive($md) {
+                font-size: 19px;
+                font-weight: 500;
+            }
+
             @include responsive($lg) {
                 font-size: 30px;
                 font-weight: 500;
@@ -57,6 +62,10 @@
             font-weight: 300;
             line-height: normal;
 
+            @include responsive($md) {
+                font-size: 16px;
+            }
+
             @include responsive($lg) {
                 font-size: 20px;
             }
@@ -69,6 +78,11 @@
             font-weight: 500;
             line-height: normal;
             margin-bottom: 7px;
+
+            @include responsive($md) {
+                font-size: 25px;
+                font-weight: 500;
+            }
 
             @include responsive($lg) {
                 font-size: 30px;
@@ -84,6 +98,11 @@
             line-height: 22px;
             /* 183.333% */
             margin-bottom: 12px;
+
+            @include responsive($md) {
+                font-size: 16px;
+                line-height: normal;
+            }
 
             @include responsive($lg) {
                 font-size: 20px;

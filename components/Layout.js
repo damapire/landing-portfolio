@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import React, { useEffect } from 'react'
-import Nav from './Nav'
+import Navbar from './Navbar'
 import Footer from './Footer'
 
 export default function Layout ({ children, title, description }) {
@@ -13,7 +13,7 @@ export default function Layout ({ children, title, description }) {
         <title>{title}</title>
         <meta name='description' content={description} />
       </Head>
-      <Nav />
+      <Navbar />
       {children}
       <Footer />
     </>
