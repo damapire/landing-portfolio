@@ -5,6 +5,7 @@ import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Projects from '@/components/Home/Projects'
 import WhatsappButton from '@/components/Utilities/WhatsappButton'
+import Testimonials from '@/components/Home/Testimonials'
 
 export default function Home () {
   return (
@@ -15,6 +16,7 @@ export default function Home () {
         <Services />
         <Experiencies />
         <Projects />
+        <Testimonials />
         <WhatsappButton />
      
     </Layout>

@@ -66,6 +66,10 @@
             height: 170px;
         }
 
+        @include responsive($xl) {
+            height: 140px;
+        }
+
         &-wrapper-icon {
             width: 57px;
             height: 57px;

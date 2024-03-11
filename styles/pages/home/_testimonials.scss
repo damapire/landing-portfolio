@@ -1,0 +1,155 @@
+.testimonials {
+    background: #F8F7F1;
+    padding: 32px 0 32px 0;
+    overflow: hidden;
+
+    @include responsive($xl) {
+        padding-top: 88px;
+        padding-bottom: 68px;
+    }
+
+    &__title {
+        color: #000;
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 16px;
+
+        @include responsive($xl) {
+            font-size: 60px;
+        }
+    }
+    
+    &__subtitle {
+        color: #000;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 178.571% */
+        margin: 0 auto;
+        max-width: 327px;
+
+        @include responsive($xl) {
+            font-size: 20px;
+            max-width: 743px;
+        }
+    }
+
+    .swiper {
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        @include responsive($md) {
+            padding-top: 85px;
+            padding-bottom: 80px;
+        }
+    }
+
+    &__card {
+        position: relative;
+        border-radius: 30px;
+        background: #FFF;
+        max-width: 327px;
+        margin: 0 auto;
+
+        /* shadow-card-work */
+        box-shadow: 34px 14px 54px 0px rgba(0, 0, 0, 0.12);
+        padding: 40px 24px 28px 24px;
+
+        @include responsive($md) {
+            width: 100%;
+            max-width: 750px;
+        }
+        
+        @include responsive($xl) {
+            margin-top: 183px;
+            padding: 70px 42px 16px 42px;
+        }
+        
+        @include responsive($xxl) {
+            width: 558px;
+            height: 251px;
+        }
+
+        &.active {
+
+            @include responsive($xl) {
+                margin-top: 114px;
+            }
+        }
+
+        &-avatar {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateY(-50%) translate(-50%);
+            width: 64px;
+            height: 64px;
+
+            @include responsive($xl) {
+                width: 110px;
+                height: 110px;
+            }
+
+            @include responsive($xxl) {
+                width: 130px;
+                height: 130px;
+            }
+        }
+
+        &-text {
+            color: #000;
+            text-align: center;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; /* 166.667% */
+            margin-bottom: 26px;
+
+            @include responsive($xl) {
+                font-size: 16px;
+            }
+        }
+
+        &-divisor {
+            max-width: 272px;
+            background: #F2F2F2;
+            margin: 0 auto;
+            margin-bottom: 8px;
+
+            @include responsive($xl) {
+                max-width: 475px;
+                margin-bottom: 16px;
+            }
+        }
+
+        &-name {
+            color: #000;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-align: center;
+        }
+
+        &-position {
+            color: #000;
+            text-align: center;
+            font-size: 8px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            @include responsive($xl) {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.swiper-wrapper {
+    gap: 0;
+}

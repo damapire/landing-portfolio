@@ -51,14 +51,11 @@ export default function Projects() {
                                 520:{
                                     slidesPerView: 2.1,
                                 },
-                                992:{
-                                    slidesPerView: 2.4,
-                                },
                                 1200:{
-                                    slidesPerView: 2.9,
+                                    slidesPerView: 2.5,
                                 },
                                 1440:{
-                                    slidesPerView: 3.5,
+                                    slidesPerView: 3.1,
                                 }
                             }}
                             className='projects__swiper'
