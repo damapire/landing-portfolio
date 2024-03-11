@@ -1,0 +1,44 @@
+[
+    {
+        "id" : 1,
+        "name" : "Melissa Taylor",
+        "position" : "CEO MoveBike",
+        "avatar" : "/assets/home/testimonials/MelissaTaylor.png",
+        "text" : "I got a job that was in accordance with the salary and field of word. The process of submitting an application was quite cosy. I got a job that was in accordance with the salary and field of word."
+    },
+    {
+        "id" : 2,
+        "name" : "James Anderson",
+        "position" : "CEO DevKoore",
+        "avatar" : "/assets/home/testimonials/JamesAnderson.png",
+        "text" : "I got a job that was in accordance with the salary and field of word. The process of submitting an application was quite cosy. I got a job that was in accordance with the salary and field of word."
+    },
+    {
+        "id" : 3,
+        "name" : "John Smith",
+        "position" : "CEO Microsoft",
+        "avatar" : "/assets/home/testimonials/JohnSmith.png",
+        "text" : "I got a job that was in accordance with the salary and field of word. The process of submitting an application was quite cosy. I got a job that was in accordance with the salary and field of word."
+    },
+    {
+        "id" : 4,
+        "name" : "Melissa Taylor",
+        "position" : "CEO MoveBike",
+        "avatar" : "/assets/home/testimonials/MelissaTaylor.png",
+        "text" : "I got a job that was in accordance with the salary and field of word. The process of submitting an application was quite cosy. I got a job that was in accordance with the salary and field of word."
+    },
+    {
+        "id" : 5,
+        "name" : "James Anderson",
+        "position" : "CEO DevKoore",
+        "avatar" : "/assets/home/testimonials/JamesAnderson.png",
+        "text" : "I got a job that was in accordance with the salary and field of word. The process of submitting an application was quite cosy. I got a job that was in accordance with the salary and field of word."
+    },
+    {
+        "id" : 6,
+        "name" : "John Smith",
+        "position" : "CEO Microsoft",
+        "avatar" : "/assets/home/testimonials/JohnSmith.png",
+        "text" : "I got a job that was in accordance with the salary and field of word. The process of submitting an application was quite cosy. I got a job that was in accordance with the salary and field of word."
+    }
+]

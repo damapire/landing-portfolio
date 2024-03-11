@@ -3,7 +3,7 @@
     padding: 32px 0 32px 0;
     overflow: hidden;
 
-    @include responsive($xl) {
+    @include responsive($lg) {
         padding-top: 88px;
         padding-bottom: 68px;
     }
@@ -17,7 +17,7 @@
         text-align: center;
         margin-bottom: 16px;
 
-        @include responsive($xl) {
+        @include responsive($lg) {
             font-size: 60px;
         }
     }
@@ -32,18 +32,22 @@
         margin: 0 auto;
         max-width: 327px;
 
-        @include responsive($xl) {
+        @include responsive($lg) {
             font-size: 20px;
             max-width: 743px;
         }
     }
 
     .swiper {
-        padding-top: 70px;
+        padding-top: 40px;
         padding-bottom: 70px;
 
         @include responsive($md) {
             padding-top: 85px;
+            padding-bottom: 80px;
+        }
+        @include responsive($xl) {
+            padding-top: 45px;
             padding-bottom: 80px;
         }
     }
@@ -75,6 +79,7 @@
         }
 
         &.active {
+            transition: all 0.4s ease-in-out;
 
             @include responsive($xl) {
                 margin-top: 114px;
@@ -153,3 +158,5 @@
 .swiper-wrapper {
     gap: 0;
 }
+
+

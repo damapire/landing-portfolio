@@ -6,9 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import 'swiper/css/pagination';
-
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import Link from 'next/link';
 
 import projects from '@/data/projects.json'
@@ -36,11 +34,8 @@ export default function Projects() {
                                 disableOnInteraction: false,
                             }}
                             loop
-                            pagination={{
-                                clickable: true,
-                              }}
                             navigation={true}
-                            modules={[ Navigation, Pagination]}
+                            modules={[Autoplay, Navigation]}
                             breakpoints={{
                                 375:{
                                     slidesPerView: 1.4,
@@ -55,7 +50,7 @@ export default function Projects() {
                                     slidesPerView: 2.5,
                                 },
                                 1440:{
-                                    slidesPerView: 3.1,
+                                    slidesPerView: 2.8,
                                 }
                             }}
                             className='projects__swiper'
