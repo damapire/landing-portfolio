@@ -13,16 +13,16 @@ export default function Navbar() {
 
         <ul className="navbar-nav d-none d-md-flex flex-row justify-content-evenly align-items-center flex-grow-1 ">
           <li className="navbar-item my-2">
-            <a className="navbar-link active" aria-current="page" href={'#'}>Services</a>
+            <a className="navbar-link active" aria-current="page" href={'#services'}>Services</a>
           </li>
           <li className="navbar-item my-2">
-            <a className="navbar-link active" aria-current="page" href={'#'}>Proyectos</a>
+            <a className="navbar-link active" aria-current="page" href={'#projects'}>Proyectos</a>
           </li>
           <li className="navbar-item my-2">
-            <a className="navbar-link active" aria-current="page" href={'#'}>Notas</a>
+            <a className="navbar-link active" aria-current="page" href={'#testimonials'}>Notas</a>
           </li>
           <li className="navbar-item my-2">
-            <a className="navbar-link active" aria-current="page" href={'#'}>Experiencia</a>
+            <a className="navbar-link active" aria-current="page" href={'#experiencies'}>Experiencia</a>
           </li>
         </ul>
 
@@ -45,16 +45,16 @@ export default function Navbar() {
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-center align-items-center flex-grow-1 ">
               <li className="nav-item my-2">
-                <a className="navbar-link active" aria-current="page" href={'#'}>Services</a>
+                <a className="navbar-link active" aria-current="page" href={'#services'}>Services</a>
               </li>
               <li className="nav-item my-2">
-                <a className="navbar-link active" aria-current="page" href={'#'}>Proyectos</a>
+                <a className="navbar-link active" aria-current="page" href={'#projects'}>Proyectos</a>
               </li>
               <li className="nav-item my-2">
-                <a className="navbar-link active" aria-current="page" href={'#'}>Notas</a>
+                <a className="navbar-link active" aria-current="page" href={'#testimonials'}>Notas</a>
               </li>
               <li className="nav-item my-2">
-                <a className="navbar-link active" aria-current="page" href={'#'}>Experiencia</a>
+                <a className="navbar-link active" aria-current="page" href={'#experiencies'}>Experiencia</a>
               </li>
             </ul>
           </div>

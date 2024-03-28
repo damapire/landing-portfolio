@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 import { Autoplay, Navigation } from 'swiper/modules';
 import Link from 'next/link';
@@ -13,7 +14,7 @@ import projects from '@/data/projects.json'
 
 export default function Projects() {
     return (
-        <section className="container-fluid projects">
+        <section id='projects' className="container-fluid projects">
             <div className="container">
                 <div className="row">
                     <div className="col-12 container d-flex justify-content-between align-items-lg-center container">
@@ -38,13 +39,13 @@ export default function Projects() {
                             modules={[Autoplay, Navigation]}
                             breakpoints={{
                                 375:{
-                                    slidesPerView: 1.4,
+                                    slidesPerView: 1.3,
                                 },
                                 425:{
-                                    slidesPerView: 1.6,
+                                    slidesPerView: 1.5,
                                 },
                                 520:{
-                                    slidesPerView: 2.1,
+                                    slidesPerView: 1.9,
                                 },
                                 1200:{
                                     slidesPerView: 2.5,

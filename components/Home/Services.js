@@ -4,7 +4,7 @@ import services from '@/data/services.json'
 
 export default function AboutMe() {
   return (
-    <section className='container-fluid services'>
+    <section id='services' className='container-fluid services'>
       <div className="container">
         <div className="row">
           <div className="col-md-6 order-1 order-md-0">      

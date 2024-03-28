@@ -7,14 +7,14 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 
 import testimonials from '@/data/testimonials.json'
 import Image from 'next/image';
 
 export default function Testimonials() {
     return (
-        <section className='container-fluid testimonials'>
+        <section id='testimonials' className='container-fluid testimonials'>
             <div className="row">
                 <div className="col-12">
                     <h2 className='testimonials__title'>People Talk About Me</h2>
@@ -24,10 +24,6 @@ export default function Testimonials() {
             <div className="row">
                 <div className="col-12">
                     <Swiper
-                        pagination={{
-                            dynamicBullets: true,
-                        }}
-                        modules={[Pagination]}
                         spaceBetween={50}
                         slidesPerView={1}
                         loop
@@ -39,6 +35,9 @@ export default function Testimonials() {
                                 spaceBetween: 100,
                             }
                         }}
+                        navigation 
+                        pagination={{ clickable: true }}
+                        modules={[Navigation, Pagination]}
                     >
                         {
                             testimonials.map((testimonials) => (

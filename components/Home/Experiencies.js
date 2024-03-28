@@ -9,7 +9,7 @@ import business from '@/data/business.json'
 
 export default function Experiencies() {
     return (
-        <section className='container-fluid experiencies'>
+        <section id='experiencies' className='container-fluid experiencies'>
             <div className="container experiencies-container">
                 <div className="row">
                     <div className="col-12">

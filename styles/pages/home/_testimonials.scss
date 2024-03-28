@@ -50,6 +50,103 @@
             padding-top: 45px;
             padding-bottom: 80px;
         }
+
+        &-pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &-bullet {
+                border-radius: 30px;
+                background: rgba(25, 41, 28, .40);
+                transition: all 0.35s ease-in-out;
+                
+                &-active {
+                    background: #19291C;
+                    width: 14px;
+                    height: 26px;
+                }
+            }
+            @include responsive($md) {
+                display: none;
+            }
+        }
+
+        &-button-prev, &-button-next{
+            display: none;
+
+            @include responsive($md) {
+                display: block;
+                top: 90%;
+                margin-top: 0;
+                width: 40px;
+                height: 40px;
+                background-color: #fff;
+                border: 1.5px solid #fff;
+                margin: 0 auto;
+                border-radius: 50%;
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover {
+                background-color: #222E1F;
+                border: 1.5px solid #000;
+            }
+        }
+
+        &-button-next {
+            @include responsive($md) {
+                right: auto;
+                left: 51%;
+                display: flex;
+            }
+
+            &::after {
+                content: '';
+                background-image: url(/assets/icons/icon-arrow-right.svg);
+                background-size: cover;
+                width: 22px;
+                height: 22px;
+                display: block;
+                background-repeat: no-repeat;
+                background-position: center center;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            &:hover {
+                &::after{
+                    filter: invert(100%);
+                }
+            }
+        }
+
+        &-button-prev {
+            @include responsive($md) {
+                right: 51%;
+                left: auto;
+                display: flex;
+            }
+
+            &::after {
+                content: '';
+                background-image: url(/assets/icons/icon-arrow-left.svg);
+                background-size: cover;
+                width: 22px;
+                height: 22px;
+                display: block;
+                background-repeat: no-repeat;
+                background-position: center center;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &:hover {
+                &::after{
+                    filter: invert(100%);
+                }
+            }
+        }
     }
 
     &__card {
