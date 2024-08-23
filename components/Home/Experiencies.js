@@ -32,10 +32,10 @@ export default function Experiencies() {
                     </div>
 
                     <div className="col-2 col-lg-2">
-                        <section className='experiencies__timeline d-flex flex-column justify-content-center align-items-center'>
+                        <section>
                             {
                                 business.map(item => (
-                                    <>
+                                    <div key={item.id} className='experiencies__timeline d-flex flex-column justify-content-center align-items-center'>
                                         <div key={item.id} className="experiencies__timeline-squere">
                                             <span className='experiencies__timeline-squere-circle' style={{backgroundColor: item.color}} />
 
@@ -55,7 +55,7 @@ export default function Experiencies() {
                                         <div className="experiencies__timeline-divisor d-none d-lg-block">
                                             <Image src={ICON_LG_LINE} alt="Icon Line" />
                                         </div>
-                                    </>
+                                    </div>
                                 ))
                             }
                         </section>
